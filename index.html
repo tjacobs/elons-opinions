@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elon's Opinions — look up his take on anything</title>
+  <meta name="description" content="A Finder-style browser of Elon Musk's real, sourced public opinions on the big topics of life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">𝕏</span>
+      <div>
+        <h1>Elon's Opinions</h1>
+        <p class="tagline">Drill down to find his take on anything he's talked about.</p>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search topics &amp; quotes…" autocomplete="off" />
+    </div>
+  </header>
+
+  <main id="columns" class="columns" aria-label="Topic browser">
+    <!-- Miller columns injected by app.js -->
+  </main>
+
+  <footer class="footer">
+    <p>
+      Every quote here is a <strong>real, publicly reported statement</strong> from Elon Musk, with a source link to verify it.
+      Some are condensed as reported by the cited outlet. This is an independent reference and is
+      <strong>not affiliated with or endorsed by Elon Musk</strong>.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
