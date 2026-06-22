@@ -1,13 +1,13 @@
 :root {
-  --bg: #0a0a0c;
-  --panel: #131318;
-  --panel-2: #1a1a21;
-  --border: #26262f;
-  --text: #e9e9ef;
-  --muted: #8a8a99;
-  --accent: #4ea1ff;
-  --accent-dim: #1d3a5c;
-  --quote-bg: #14141a;
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --panel-2: #f0f2f5;
+  --border: #e3e6ec;
+  --text: #1a1c22;
+  --muted: #6b7280;
+  --accent: #1d6fe0;
+  --accent-dim: #dbe9fc;
+  --quote-bg: #f8fafc;
   --col-w: 240px;
   font-synthesis: none;
 }
@@ -21,7 +21,7 @@ html, body {
 
 body {
   background:
-    radial-gradient(1200px 600px at 80% -10%, #15233a 0%, transparent 55%),
+    radial-gradient(1200px 600px at 80% -10%, #e8f0fc 0%, transparent 55%),
     var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -39,7 +39,7 @@ body {
   gap: 1rem;
   padding: 14px 20px;
   border-bottom: 1px solid var(--border);
-  background: rgba(10, 10, 12, 0.7);
+  background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -49,20 +49,7 @@ body {
 
 .brand { display: flex; align-items: center; gap: 14px; }
 
-.logo {
-  font-size: 30px;
-  line-height: 1;
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: linear-gradient(180deg, #1b1b22, #0e0e12);
-}
-
 h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
-.tagline { margin: 2px 0 0; font-size: 12.5px; color: var(--muted); }
 
 .search-wrap { flex: 1; max-width: 340px; min-width: 180px; }
 #search {
@@ -70,7 +57,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   padding: 9px 13px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: var(--panel-2);
+  background: var(--panel);
   color: var(--text);
   font-size: 14px;
   outline: none;
@@ -116,10 +103,10 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   line-height: 1.25;
   user-select: none;
 }
-.row:hover { background: rgba(78, 161, 255, 0.08); }
-.row.active { background: var(--accent); color: #061018; font-weight: 600; }
-.row.active .chev { color: #061018; }
-.chev { color: var(--muted); font-size: 12px; flex: 0 0 auto; }
+.row:hover { background: rgba(29, 111, 224, 0.08); }
+.row.active { background: var(--accent); color: #fff; font-weight: 600; }
+.row.active .chev { color: #cfe0fa; }
+.chev { color: #9aa1ad; font-size: 12px; flex: 0 0 auto; }
 
 /* ---------- Opinion panel ---------- */
 .opinion-col {
@@ -129,7 +116,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   padding: 26px clamp(18px, 4vw, 44px);
   overflow-y: auto;
   background:
-    radial-gradient(700px 300px at 100% 0%, #142133 0%, transparent 60%),
+    radial-gradient(700px 300px at 100% 0%, #eaf2fd 0%, transparent 60%),
     var(--panel);
 }
 
@@ -144,6 +131,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   border-radius: 12px;
   padding: 20px 22px;
   margin-bottom: 18px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
 }
 
 .quote-text {
@@ -160,7 +148,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
 .quote-attr { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .year-pill {
   background: var(--accent-dim);
-  color: #cfe6ff;
+  color: #155bb5;
   padding: 2px 8px;
   border-radius: 999px;
   font-size: 11.5px;
@@ -178,7 +166,7 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   color: var(--muted);
   padding: 40px;
 }
-.placeholder .big { font-size: 46px; opacity: 0.5; margin-bottom: 14px; }
+.placeholder .big { font-size: 46px; opacity: 0.55; margin-bottom: 14px; }
 .placeholder p { max-width: 360px; line-height: 1.5; }
 
 /* Search results list */
@@ -191,13 +179,13 @@ h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
   font-size: 11.5px;
   color: var(--muted);
   line-height: 1.5;
-  background: var(--bg);
+  background: var(--panel);
 }
-.footer strong { color: #c9c9d4; font-weight: 600; }
+.footer strong { color: #374151; font-weight: 600; }
 
 /* Scrollbars */
 .columns ::-webkit-scrollbar, .column::-webkit-scrollbar, .opinion-col::-webkit-scrollbar { width: 9px; height: 9px; }
-::-webkit-scrollbar-thumb { background: #2c2c36; border-radius: 8px; }
+::-webkit-scrollbar-thumb { background: #cdd2da; border-radius: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 
 /* ---------- Mobile ---------- */
