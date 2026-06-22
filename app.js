@@ -117,11 +117,6 @@
     var p = document.createElement("div");
     p.className = "opinion-col";
     p.dataset.depth = 1; // so it gets pruned when a top-level category is clicked
-    p.innerHTML =
-      '<div class="placeholder">' +
-      '<div class="big">🗂️</div>' +
-      "<p>Pick a category on the left, then keep drilling to the right until you reach his actual quote.</p>" +
-      "</div>";
     return p;
   }
 
