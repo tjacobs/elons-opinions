@@ -1,5 +1,7 @@
 # Elon's Opinions
 
+https://tjacobs.github.io/elons-opinions/
+
 A Finder-style (Miller-columns) browser for looking up **Elon Musk's real, sourced public opinions** on the big topics of life.
 
 Pick a broad category on the left, then drill down through subcategories to the right — Finder column-view style — until you reach his actual quote, complete with context, year, and a link to the source.
